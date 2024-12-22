@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'yekanbakh';
+	font-style: normal;
+	src: url('./font/yekanb-regular.ttf') format('ttf'),
+		url('./font/yekanb-regular.woff') format('woff')
+}
+
+@font-face {
+	font-family: 'yekanbakhBold';
+	font-style: normal;
+	font-weight: bold;
+	src: url('./font/yekanb-bold.ttf') format('ttf'),
+		url('./font/yekanb-bold.woff') format('woff')
+}
+
+@font-face {
+	font-family: 'yekanbakhFat';
+	font-style: normal;
+	font-weight: 900;
+	src: url('./font/yekanb-fat.ttf') format('ttf'),
+		url('./font/yekanb-fat.woff') format('woff')
+}
+
+h1,h2,h3 {
+    font-family: yekanbakhFat;
+}
+
+h4,h5,h6 {
+    font-family: yekanbakhBold;
+}
+p,button {
+    font-family: yekanbakh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f7f7f7;
+    margin: 0;
+    text-align: center;
+}
+#container {
+    direction: rtl;
+    max-width: 1200px;
+    max-height: 400px;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#container h1 {
+    font-size: 58px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-family: yekanbakh;
+    direction: rtl;
+}
+button:hover {
+    background: #45a049;
+}
+#fal {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

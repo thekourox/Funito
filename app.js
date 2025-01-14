@@ -6,11 +6,13 @@ const fs = require('fs');
 
 const homePath = path.join(__dirname, '/view');
 
+const falPath = path.join(__dirname, 'fal.json')
+
 app.use(express.static(homePath));
 
 app.get('/api/fal', (req, res) => {
     try{
-        const data = JSON.parse(fs.readFileSync('./fal.json'));
+        const data = JSON.parse(fs.readFileSync(falPath));
         if(!data || data.length === 0) {
             res.status(500).json({message: "No data found!"});
         }

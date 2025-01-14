@@ -1,6 +1,6 @@
 async function getFal() {
     try {
-        const response = await fetch('http://localhost:3000/api/fal');
+        const response = await fetch('/api/fal');
         const data = await response.json();
         setTimeout(() => {
             document.getElementById('waitText').style.display = 'none';

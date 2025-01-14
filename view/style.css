@@ -21,6 +21,15 @@
 		url('./font/yekanb-fat.woff') format('woff')
 }
 
+@font-face {
+	font-family: 'IranNas';
+	font-style: normal;
+	font-weight: 900;
+	src: url('./font/IranNas/IranNastaliq.ttf') format('ttf'),
+		url('./font/IranNas/IranNastaliq.woff') format('woff'),
+        url('./font/IranNas/IranNastaliq.eot') format('eot'),
+}
+
 h1,h2,h3 {
     font-family: yekanbakhFat;
 }
@@ -34,6 +43,7 @@ p,button {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -44,7 +54,7 @@ body {
 #container {
     direction: rtl;
     max-width: 1200px;
-    max-height: 400px;
+    max-height: 800px;
     text-align: center;
     padding: 20px;
     background: white;
@@ -63,7 +73,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    font-family: yekanbakh;
+    font-family: yekanbakhBold;
     direction: rtl;
 }
 button:hover {
@@ -73,4 +83,18 @@ button:hover {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
+}
+
+#falText {
+    text-align: justify;
+}
+
+#falTitle {
+    font-family: IranNas;
+    font-size: 30px;
+}
+
+#footerDonate img {
+    height: 120px;
+    width: 240px;
 }

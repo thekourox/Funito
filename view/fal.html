@@ -11,15 +11,22 @@
 <body>
     <div id="container">
         <h1>فال حافظ</h1>
+        <h4>لطفا نیت بفرمایید ، سپس از عدد ۱ تا ۲۰۰ یک عدد را وارد کنید</h4>
+        <h5>(یا با خالی گذاشتن فیلد ، بصورت کاملا تصادفی فال خود را دریافت کنید)</h5>
+        <input type="number" id="falNumber" min="1" max="200" required>
         <button id="getFal" onclick="getFal()">نیت کردم. فال منو بگیر!</button>
         <button id="backButton" style="display: none;">دمت گرم</button>
         <h4 id="falTitle"></h4>
         <hr>
+        <h5 id="waitText"></h5>
         <div id="falInter">
             <p id="falText"></p>
         </div>
-
     </div>
+    <footer>
+        <h5>طراحی شده توسط <a href="https://linkedin.com/in/korniknet">امیر مرندی</a> در شمسی‌پور تهران</h5>
+    </footer>
+    <a id="footerDonate" href="https://www.coffeebede.com/amirmarandi"><img class="img-fluid" src="https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg" /></a>
     <script src="./script.js"></script>
 </body>
 
